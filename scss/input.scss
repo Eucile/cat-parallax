@@ -1,0 +1,93 @@
+// 1. Your custom variables and variable overwrites.
+$global-link-color: #DA7D02;
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-card() { color: #000; }
+
+// 4. Import UIkit.
+@import "uikit/src/scss/uikit-theme.scss";
+
+body {
+  background-image: linear-gradient(to bottom right, white, #b3b3ff,  peachpuff);
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  background-color: transparent;
+  border: none;
+}
+
+.grassContainer {
+  z-index: 4;
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  bottom: 0px;
+  .grass {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.landscape1Container {
+  z-index: 3;
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  bottom: 30px;
+  .landscape1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.houseContainer {
+  z-index: 2;
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  bottom: 130px;
+  .house {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.hillsContainer {
+  z-index: 1;
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  bottom: 200px;
+  .hills {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.message {
+  padding: 100px;
+  position: absolute;
+  z-index: 6;
+}
+#lorem {
+  z-index: 99;
+}
+
+#cat {
+  z-index: 5;
+  // img {
+  //   &:hover {
+  //   animation: wobble 2s;
+  //   }
+  // }
+}
